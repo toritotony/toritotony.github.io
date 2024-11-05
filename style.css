@@ -71,41 +71,45 @@ body {
     background-color: #ffcc00;
 }
 
-/* Hero Section Modifications */
+/* Hero Section Styling */
 .hero-section {
-    background-color: #e6f0ff; /* Light blue background for better text visibility */
+    background-color: #e0f7ff; /* Softer blue background */
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    color: #333; /* Ensure dark text on a light background */
+    color: #333; /* Fallback color for hero section */
 }
 
 .hero-content {
-    max-width: 600px;
-    padding: 1.5rem;
-    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    max-width: 700px;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for readability */
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow to lift the text box */
 }
 
+/* Hero Section Text Styles */
 .hero-section h1 {
-    color: #333; /* Black text for header */
-    font-size: 2.5rem;
+    color: #000; /* Ensures black text */
+    font-size: 2.8rem;
     margin-bottom: 1rem;
 }
 
 .hero-section p {
+    color: #333; /* Dark gray for paragraph text */
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
+    line-height: 1.6;
 }
 
+/* Button Styling for Hero Section */
 .hero-section .button {
     background-color: #004080;
     color: #fff;
-    padding: 0.75rem 1.5rem;
+    padding: 0.8rem 1.6rem;
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
@@ -116,6 +120,7 @@ body {
 .hero-section .button:hover {
     background-color: #002850;
 }
+
 
 /* Services Section */
 .services-section {
