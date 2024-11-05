@@ -3,34 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Projects</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Professional-grade website for enterprise-level content">
+    <title>Enterprise Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Projects</h1>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Enterprise Logo</div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cta-button">
+                <a href="#contact" class="button">Get Started</a>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Project 1</h2>
-            <p>A description of project 1 with links to code and demos.</p>
-        </section>
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Our Enterprise Solutions</h1>
+            <p>Providing innovative, scalable solutions for modern businesses.</p>
+            <a href="#services" class="button hero-button">Learn More</a>
+        </div>
+    </section>
 
-        <section>
-            <h2>Project 2</h2>
-            <p>A description of project 2 with links to code and demos.</p>
-        </section>
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Development</h3>
+                <p>Building high-quality software tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-cloud"></i>
+                <h3>Cloud Solutions</h3>
+                <p>Scalable cloud architecture to ensure seamless growth.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Security</h3>
+                <p>Advanced security to protect your data and privacy.</p>
+            </div>
+        </div>
+    </section>
 
-        <section>
-            <h2>Notes</h2>
-            <p>My programming notes and tutorials.</p>
-            <a href="notes.html">View my notes</a>
-        </section>
-    </main>
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Our company has been a leader in enterprise technology for over 20 years, helping businesses achieve their goals with cutting-edge solutions and a customer-first approach.</p>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 My Name</p>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Enterprise Website. All rights reserved.</p>
+            <ul class="social-icons">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
