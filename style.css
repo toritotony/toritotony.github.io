@@ -7,15 +7,15 @@
 }
 
 body {
-    color: #333;
-    background-color: #f5f5f5;
+    color: #e0e0e0; /* Light text for dark background */
+    background: linear-gradient(135deg, #0d1b2a, #1d3557, #2c3e50);
     line-height: 1.6;
 }
 
 /* Header */
 .header {
-    background-color: #004080;
-    color: #fff;
+    background: linear-gradient(135deg, #1a237e, #311b92); /* Dark blue to purple gradient */
+    color: #ffffff;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -35,6 +35,7 @@ body {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #e0e0e0;
 }
 
 .navbar ul {
@@ -47,19 +48,19 @@ body {
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: #e0e0e0; /* Light text color */
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #ffffff;
+    color: #9c27b0; /* Hover with a lighter purple shade */
 }
 
 .cta-button .button {
-    background-color: #ffd700;
-    color: #004080;
+    background-color: #9c27b0; /* Purple button color */
+    color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     font-weight: bold;
@@ -68,47 +69,45 @@ body {
 }
 
 .cta-button .button:hover {
-    background-color: #ffcc00;
+    background-color: #6a1b9a; /* Darker purple on hover */
 }
 
-/* Hero Section Styling */
+/* Hero Section */
 .hero-section {
-    background-color: #e0f7ff; /* Softer blue background */
+    background: linear-gradient(135deg, #0d1b2a, #1d3557); /* Midnight blue gradient */
+    color: #e0e0e0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    color: #333; /* Fallback color for hero section */
 }
 
 .hero-content {
     max-width: 700px;
     padding: 2rem;
-    background: rgba(255, 255, 255, 0.9); /* Slightly opaque white background for readability */
+    background: rgba(29, 53, 87, 0.85); /* Semi-transparent dark blue background */
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Soft shadow to lift the text box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow for contrast */
 }
 
-/* Hero Section Text Styles */
 .hero-section h1 {
-    color: #000; /* Ensures black text */
-    font-size: 2.8rem; /* Main title size */
+    color: #e0e0e0;
+    font-size: 2.8rem;
     margin-bottom: 1rem;
 }
 
 .hero-section p {
-    color: #333; /* Dark gray for paragraph text */
-    font-size: 1.2rem; /* Size for paragraph text */
+    color: #cfcfcf; /* Slightly lighter text color for readability */
+    font-size: 1.2rem;
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
 
-/* Button Styling for Hero Section */
 .hero-section .button {
-    background-color: #004080;
-    color: #fff;
+    background-color: #9c27b0; /* Purple button color */
+    color: #ffffff;
     padding: 0.8rem 1.6rem;
     border-radius: 5px;
     font-weight: bold;
@@ -118,15 +117,15 @@ body {
 }
 
 .hero-section .button:hover {
-    background-color: #002850;
+    background-color: #6a1b9a; /* Darker purple on hover */
 }
-
 
 /* Services Section */
 .services-section {
     padding: 3rem 1rem;
-    background-color: #e0e0e0;
+    background: linear-gradient(135deg, #1d3557, #2c3e50); /* Gradient from dark blue to dark gray */
     text-align: center;
+    color: #e0e0e0;
 }
 
 .service-cards {
@@ -137,17 +136,18 @@ body {
 }
 
 .service-card {
-    background-color: #fff;
+    background-color: #2c3e50;
     padding: 1.5rem;
     border-radius: 10px;
     width: 30%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    color: #e0e0e0;
 }
 
 .service-card i {
     font-size: 2rem;
-    color: #004080;
+    color: #9c27b0; /* Purple icon color */
     margin-bottom: 1rem;
 }
 
@@ -158,13 +158,15 @@ body {
 /* About Section */
 .about-section {
     padding: 3rem 1rem;
+    background: linear-gradient(135deg, #2c3e50, #1a237e); /* Gradient from dark gray to deep blue */
     text-align: center;
+    color: #e0e0e0;
 }
 
 /* Footer */
 .footer {
-    background-color: #333;
-    color: #f5f5f5;
+    background-color: #0d1b2a; /* Midnight blue color */
+    color: #e0e0e0;
     padding: 1.5rem 1rem;
     text-align: center;
 }
@@ -181,13 +183,13 @@ body {
 }
 
 .social-icons li a {
-    color: #ffffff;
+    color: #9c27b0;
     font-size: 1.25rem;
     transition: color 0.3s ease;
 }
 
 .social-icons li a:hover {
-    color: #ffffff;
+    color: #6a1b9a; /* Darker purple on hover */
 }
 
 /* Responsive Design */
@@ -205,98 +207,4 @@ body {
     .service-card {
         width: 80%;
     }
-}
-
-/* Additional Styling for About and Contact Pages */
-
-.about-section, .contact-section {
-    padding: 3rem 1rem;
-    text-align: center;
-}
-
-.team-section {
-    display: flex;
-    gap: 1.5rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-}
-
-.team-member {
-    background-color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    width: 250px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.team-member img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-
-.team-member h4 {
-    margin-top: 0.5rem;
-}
-
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-    max-width: 600px;
-    margin: auto;
-}
-
-.contact-form label {
-    font-weight: bold;
-    text-align: left;
-}
-
-.contact-form input, .contact-form textarea {
-    padding: 0.75rem;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 100%;
-}
-
-.contact-form .button {
-    background-color: #004080;
-    color: #fff;
-    padding: 0.75rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact-form .button:hover {
-    background-color: #002850;
-}
-
-.header-link {
-    font-size: 1rem; /* Closer to h4 size */
-    font-weight: bold;
-    color: #004080; /* Header color */
-    margin: 0; /* Adjusts margin if needed */
-}
-
-.header-link a {
-    color: inherit; /* Inherit color from h3 */
-    text-decoration: underline; /* Adds underline to resemble a link */
-    transition: color 0.3s ease; /* Smooth transition for hover */
-}
-
-.header-link a:hover {
-    color: #002850; /* Hover effect color */
-}
-
-/* h3 Headers Styling */
-h3 {
-    font-size: 1.25rem; /* Change to the size similar to h4 */
-    font-weight: bold; /* Keep it bold */
-    color: #004080; /* Keep consistent color */
-    margin: 1rem 0; /* Add margin for spacing */
 }
