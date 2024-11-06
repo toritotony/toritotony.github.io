@@ -275,3 +275,19 @@ body {
 .contact-form .button:hover {
     background-color: #002850;
 }
+
+.header-link {
+    font-size: 1.75rem; /* Sets the header size */
+    font-weight: bold;
+    color: #004080; /* Header color */
+}
+
+.header-link a {
+    color: inherit; /* Inherit color from h3 */
+    text-decoration: underline; /* Adds underline to make it appear like a link */
+    transition: color 0.3s ease; /* Smooth transition on color change */
+}
+
+.header-link a:hover {
+    color: #002850; /* Change color on hover to mimic a link */
+}
