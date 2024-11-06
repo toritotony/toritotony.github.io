@@ -47,19 +47,20 @@ body {
     margin-left: 1rem;
 }
 
-.navbar ul li a {
-    color: #e0e0e0; /* Light text color */
-    text-decoration: none;
-    font-weight: bold;
+.navbar ul li a,
+a {
+    color: #b39ddb; /* Softer lavender */
+    text-decoration: underline;
     transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover {
-    color: #9c27b0; /* Hover with a lighter purple shade */
+.navbar ul li a:hover,
+a:hover {
+    color: #d1c4e9; /* Lighter lavender on hover */
 }
 
 .cta-button .button {
-    background-color: #9c27b0; /* Purple button color */
+    background-color: #6a1b9a; /* Purple button color */
     color: #ffffff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -69,7 +70,7 @@ body {
 }
 
 .cta-button .button:hover {
-    background-color: #6a1b9a; /* Darker purple on hover */
+    background-color: #4a148c; /* Darker purple on hover */
 }
 
 /* Hero Section */
@@ -106,7 +107,7 @@ body {
 }
 
 .hero-section .button {
-    background-color: #9c27b0; /* Purple button color */
+    background-color: #6a1b9a; /* Purple button color */
     color: #ffffff;
     padding: 0.8rem 1.6rem;
     border-radius: 5px;
@@ -117,7 +118,7 @@ body {
 }
 
 .hero-section .button:hover {
-    background-color: #6a1b9a; /* Darker purple on hover */
+    background-color: #4a148c; /* Darker purple on hover */
 }
 
 /* Services Section */
@@ -147,7 +148,7 @@ body {
 
 .service-card i {
     font-size: 2rem;
-    color: #9c27b0; /* Purple icon color */
+    color: #b39ddb; /* Purple icon color */
     margin-bottom: 1rem;
 }
 
