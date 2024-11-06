@@ -47,16 +47,28 @@ body {
     margin-left: 1rem;
 }
 
-.navbar ul li a,
+/* Header Navigation Links */
+.navbar ul li a {
+    color: #c5a3ff; /* Vibrant lavender */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline for header labels */
+    padding: 0.3rem 0.5rem; /* Add some padding for button-like feel */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #e0b3ff; /* Slightly lighter lavender on hover */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+}
+
 a {
-    color: #c5a3ff; /* Vibrant lavender for better visibility */
+    color: #c5a3ff;
     text-decoration: underline;
     transition: color 0.3s ease;
 }
 
-.navbar ul li a:hover,
 a:hover {
-    color: #e0b3ff; /* Lighter lavender on hover */
+    color: #e0b3ff;
 }
 
 .cta-button .button {
