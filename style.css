@@ -277,7 +277,6 @@ body {
 }
 
 .header-link {
-    font-size: 1.75rem; /* Sets the header size */
     font-weight: bold;
     color: #004080; /* Header color */
 }
