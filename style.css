@@ -94,13 +94,13 @@ body {
 /* Hero Section Text Styles */
 .hero-section h1 {
     color: #000; /* Ensures black text */
-    font-size: 2.8rem;
+    font-size: 2.8rem; /* Main title size */
     margin-bottom: 1rem;
 }
 
 .hero-section p {
     color: #333; /* Dark gray for paragraph text */
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Size for paragraph text */
     margin-bottom: 1.5rem;
     line-height: 1.6;
 }
@@ -291,4 +291,12 @@ body {
 
 .header-link a:hover {
     color: #002850; /* Hover effect color */
+}
+
+/* h3 Headers Styling */
+h3 {
+    font-size: 1.25rem; /* Change to the size similar to h4 */
+    font-weight: bold; /* Keep it bold */
+    color: #004080; /* Keep consistent color */
+    margin: 1rem 0; /* Add margin for spacing */
 }
