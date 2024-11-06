@@ -277,17 +277,18 @@ body {
 }
 
 .header-link {
-    font-size: 1.25rem;
+    font-size: 1rem; /* Closer to h4 size */
     font-weight: bold;
     color: #004080; /* Header color */
+    margin: 0; /* Adjusts margin if needed */
 }
 
 .header-link a {
     color: inherit; /* Inherit color from h3 */
-    text-decoration: underline; /* Adds underline to make it appear like a link */
-    transition: color 0.3s ease; /* Smooth transition on color change */
+    text-decoration: underline; /* Adds underline to resemble a link */
+    transition: color 0.3s ease; /* Smooth transition for hover */
 }
 
 .header-link a:hover {
-    color: #002850; /* Change color on hover to mimic a link */
+    color: #002850; /* Hover effect color */
 }
