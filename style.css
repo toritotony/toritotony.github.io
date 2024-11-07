@@ -206,13 +206,13 @@ a:hover {
 }
 
 .header-link {
-    text-decoration: none; /* Removes underline */
-    color: inherit; /* Keeps the link color as inherited from parent */
+    text-decoration: none !important; /* Ensure underline is removed */
+    color: inherit; /* Inherit color from parent */
     transition: text-decoration 0.3s ease; /* Smooth transition */
 }
 
 .header-link:hover {
-    text-decoration: underline; /* Adds underline on hover */
+    text-decoration: underline !important; /* Show underline only on hover */
 }
 
 
