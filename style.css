@@ -205,6 +205,17 @@ a:hover {
     color: #6a1b9a; /* Darker purple on hover */
 }
 
+.header-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the link color as inherited from parent */
+    transition: text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.header-link:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar ul {
