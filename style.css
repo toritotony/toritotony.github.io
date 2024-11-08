@@ -208,15 +208,15 @@ a:hover {
 /* Ensure underline is removed from .header-link elements */
 h4 .header-link,
 .header-link {
-    text-decoration: none !important; /* Force removal of underline */
-    color: #c5a3ff; /* Inherit color from parent */
-    transition: text-decoration 0.3s ease; /* Smooth transition for underline */
+    text-decoration: none !important; /* Remove underline */
+    color: #c5a3ff; /* Light purple color for project titles */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
 }
 
 h4 .header-link:hover,
 .header-link:hover {
     text-decoration: underline !important; /* Show underline on hover */
-    color: #b95df7;
+    color: #b95df7; /* Darker purple on hover */
 }
 
 
