@@ -49,7 +49,7 @@ body {
 
 /* Header Navigation Links */
 .navbar ul li a {
-    color: #c5a3ff; /* Vibrant lavender */
+    color: #ffffff; /* Vibrant lavender */
     font-weight: bold;
     text-decoration: none; /* Remove underline for header labels */
     padding: 0.3rem 0.5rem; /* Add some padding for button-like feel */
