@@ -87,7 +87,7 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #0d1b2a, #1d3557); /* Midnight blue gradient */
+    background: url("C:\\Users\\wolfe\\OneDrive\\Desktop\\toritotony.github.io\\team_conference_photo.jpeg"); /*linear-gradient(135deg, #0d1b2a, #1d3557);*/ /* Midnight blue gradient */
     color: #e0e0e0;
     height: 100vh;
     display: flex;
