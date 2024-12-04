@@ -87,7 +87,9 @@ a:hover {
 
 /* Hero Section */
 .hero-section {
-    background: url("C:\\Users\\wolfe\\OneDrive\\Desktop\\toritotony.github.io\\team_conference_photo.jpeg"); /*linear-gradient(135deg, #0d1b2a, #1d3557);*/ /* Midnight blue gradient */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('team_conference_photo.jpeg'); /*linear-gradient(135deg, #0d1b2a, #1d3557);*/ /* Midnight blue gradient */
     color: #e0e0e0;
     height: 100vh;
     display: flex;
@@ -98,10 +100,10 @@ a:hover {
 }
 
 .hero-content {
-    max-width: 700px;
-    padding: 2rem;
-    background: rgba(29, 53, 87, 0.85); /* Semi-transparent dark blue background */
-    border-radius: 8px;
+    max-width: 475px;
+    padding: 1rem;
+    background: rgba(29, 53, 87, 0.75); /* Semi-transparent dark blue background */
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Darker shadow for contrast */
 }
 
