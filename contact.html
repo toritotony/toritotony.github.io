@@ -57,24 +57,5 @@
             </ul>
         </div>
     </footer>
-
-    <script>
-        document.querySelector(".contact-form").addEventListener("submit", async (e) => {
-            e.preventDefault(); // Prevent default form redirection
-    
-            const formData = new FormData(e.target); // Collect form data
-            const response = await fetch("/send-email", {
-                method: "POST",
-                body: formData,
-            });
-    
-            if (response.ok) {
-                alert("Email sent successfully!");
-                e.target.reset(); // Clear form inputs
-            } else {
-                alert("Error sending email. Please try again later.");
-            }
-        });
-    </script>
 </body>
 </html>
