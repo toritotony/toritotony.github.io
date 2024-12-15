@@ -1,2 +1,2 @@
 # toritotony.github.io
-new github pages site for a full stack project -- to be published.
+Github Pages Portfolio for Anthony Wolfe, blogs to be included monthly when possible!
