@@ -5,11 +5,14 @@
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
-
-body {
+html, body {
     color: #e0e0e0; /* Light text for dark background */
     background: linear-gradient(135deg, #0d1b2a, #1d3557, #2c3e50);
     line-height: 1.6;
+    height: 100%; /* Ensure the body takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    margin: 0;
 }
 
 /* Header */
@@ -208,6 +211,8 @@ a:hover {
     color: #e0e0e0;
     padding: 1.5rem 1rem;
     text-align: center;
+    width: 100%; /* Ensures it spans the entire width */
+    position: relative;
 }
 
 .footer p {
@@ -287,6 +292,7 @@ h4 .header-link:hover,
     background-color: #1a237e; /* Dark background for the section */
     padding: 2rem 1rem;
     color: #e0e0e0;
+    flex: 1;
 }
 
 .container {

@@ -1,0 +1,24 @@
+# Node.js dependencies
+node_modules/
+
+# Python virtual environment
+venv/
+
+# Environment configuration file
+config.env
+
+# Logs and Debug files
+*.log
+
+# Temporary files and cache
+*.tmp
+*.cache
+
+# Compiled files and binaries
+*.out
+*.exe
+.DS_Store
+
+# Ignore package-lock and yarn-lock files (optional)
+package-lock.json
+yarn.lock
