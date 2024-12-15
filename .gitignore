@@ -3,6 +3,7 @@ node_modules/
 
 # Python virtual environment
 venv/
+dist/
 
 # Environment configuration file
 config.env
@@ -22,3 +23,6 @@ config.env
 # Ignore package-lock and yarn-lock files (optional)
 package-lock.json
 yarn.lock
+
+dist/
+public/build/
