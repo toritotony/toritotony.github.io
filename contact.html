@@ -27,10 +27,10 @@
             <div class="contact-header">
                 <h2>Contact Me!</h2>
                 <p>I'd love to talk more just to connect with likeminded peers, although I'm open to employment opportunities and business inquiries. Reach out through my LinkedIn provided on the home page, or leave some details in the following input boxes and submit to send a direct message! For those who wish to check out my social medias available, check the footer of this page or the overview section of my main page.</p><br/><br/>
-                <p>(This is a test functionality, possible through a personally hosted JS server with a config to hold env variables which allows emails to be sent to me containing the provided information, as opposed to a platform that hosts the servers for you)</p>
+                <p>(This functionality was possible by Formspree. However, I do have a local alternative for sending emails, powered through a personally hosted JS server with a config to hold env variables which allows emails to be sent to me containing the provided information, as opposed to a platform that hosts the servers for you)</p>
             </div>
     
-            <form action="/send-email" method="post" class="contact-form">
+            <form action="https://formspree.io/f/mzzblzbd" method="POST" class="contact-form">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
     
@@ -57,5 +57,24 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        document.querySelector(".contact-form").addEventListener("submit", async (e) => {
+            e.preventDefault(); // Prevent default form redirection
+    
+            const formData = new FormData(e.target); // Collect form data
+            const response = await fetch("/send-email", {
+                method: "POST",
+                body: formData,
+            });
+    
+            if (response.ok) {
+                alert("Email sent successfully!");
+                e.target.reset(); // Clear form inputs
+            } else {
+                alert("Error sending email. Please try again later.");
+            }
+        });
+    </script>
 </body>
 </html>

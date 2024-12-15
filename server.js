@@ -34,10 +34,10 @@ app.post("/send-email", async (req, res) => {
 
     try {
         await transporter.sendMail(mailOptions);
-        res.status(200).send("Email sent successfully.");
+        res.redirect("/contact.html?status=success");
     } catch (error) {
         console.error("Error sending email:", error);
-        res.status(500).send("Error sending email.");
+        res.redirect("/contact.html?status=error");
     }
 });
 
