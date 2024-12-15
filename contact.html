@@ -42,9 +42,12 @@
     
                 <label for="message">Message</label>
                 <textarea id="message" name="message" rows="5" required></textarea>
+
+                <input type="hidden" name="_next" value="https://toritotony.github.io/contact.html">
     
                 <button type="submit" class="button">Submit</button>
             </form>
+            <div id="form-message" style="margin-top: 1rem; font-weight: bold;"></div>
         </div>
     </section>
     
@@ -57,5 +60,36 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        const form = document.querySelector(".contact-form");
+        const formMessage = document.getElementById("form-message");
+    
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault(); // Prevent default form behavior
+    
+            const formData = new FormData(form);
+            try {
+                const response = await fetch(form.action, {
+                    method: "POST",
+                    body: formData,
+                });
+    
+                if (response.ok) {
+                    formMessage.textContent = "Your message was submitted successfully!";
+                    formMessage.style.color = "green"; // Success message styling
+                    form.reset(); // Clear the form fields
+                } else {
+                    formMessage.textContent = "Error sending message. Please try again.";
+                    formMessage.style.color = "red"; // Error message styling
+                }
+            } catch (error) {
+                console.error("Error:", error);
+                formMessage.textContent = "An unexpected error occurred. Please try again later.";
+                formMessage.style.color = "red";
+            }
+        });
+    </script>    
+    
 </body>
 </html>
