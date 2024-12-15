@@ -5,16 +5,15 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
-require("dotenv").config();
+require("dotenv").config({ path: "./config.env" });
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Serve static files (e.g., your HTML and CSS)
-app.use(express.static("public"));
-
+app.use(express.static(__dirname));
 app.post("/send-email", async (req, res) => {
-    const { name, email, subject, message } = req.body;
+    const { name, email=process.env.EMAIL_USER, subject, message } = req.body;
 
     // Configure the email transporter
     const transporter = nodemailer.createTransport({
