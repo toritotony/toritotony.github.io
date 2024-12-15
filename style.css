@@ -10,8 +10,8 @@ body {
     background: linear-gradient(135deg, #0d1b2a, #1d3557, #2c3e50);
     line-height: 1.6;
     height: 100%; /* Ensure the body takes up the full height of the viewport */
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    /*display: flex;*/
+    /*flex-direction: column;*/ /* Stack elements vertically */
     margin: 0;
 }
 
