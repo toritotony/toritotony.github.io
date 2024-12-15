@@ -245,6 +245,44 @@ h4 .header-link:hover,
     color: #b95df7; /* Darker purple on hover */
 }
 
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem; /* Adds spacing between inputs */
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #f8f9fa;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form label {
+    margin-bottom: 0.5rem;
+    display: block;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+.contact-form .button {
+    background-color: #4b0082;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .button:hover {
+    background-color: #3a006a;
+}
+
 
 
 /* Responsive Design */
