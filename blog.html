@@ -8,13 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.10/marked.min.js"></script>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2em;
+            text-align: center;
+        }
         .blog-preview {
             cursor: pointer;
-            padding: 1em;
+            padding: 2em;
             border: 1px solid #ccc;
-            margin-bottom: 1em;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+            margin-bottom: 1.5em;
+            border-radius: 10px;
+            background-color: #fff;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+        }
+        .blog-preview h2 {
+            margin: 0 0 0.5em;
+            font-size: 1.5em;
         }
         .blog-modal {
             display: none;
@@ -68,20 +87,7 @@
             <p>Welcome to my blog! Click on a post to read more.</p>
 
             <!-- Blog Previews -->
-            <div class="blog-preview" onclick="openBlog('2024-10-13-FirstBlog.md')">
-                <h2>First Blog Post</h2>
-                <p>A preview of the first blog post...</p>
-            </div>
-
-            <div class="blog-preview" onclick="openBlog('2024-10-20-SecondBlog.md')">
-                <h2>Second Blog Post</h2>
-                <p>A preview of the second blog post...</p>
-            </div>
-
-            <div class="blog-preview" onclick="openBlog('2024-11-01-ThirdBlog.md')">
-                <h2>Third Blog Post</h2>
-                <p>A preview of the third blog post...</p>
-            </div>
+            <div id="blog-previews"></div>
         </div>
     </section>
 
@@ -95,24 +101,62 @@
 
     <!-- Scripts -->
     <script>
-        function openBlog(file) {
-            fetch(file)
-                .then(response => response.text())
-                .then(text => {
-                    document.getElementById("blog-content").innerHTML = marked.parse(text);
-                    document.getElementById("blog-modal").style.display = "block";
-                })
-                .catch(error => {
-                    console.error('Error loading blog:', error);
-                    document.getElementById("blog-content").innerHTML = "<p>Error loading the blog post. Please try again later.</p>";
-                    document.getElementById("blog-modal").style.display = "block";
-                });
+        const blogFiles = [
+            { file: '2024-10-13-FirstBlog.md', title: 'First Blog Post' },
+            { file: '2024-10-20-SecondBlog.md', title: 'Second Blog Post' },
+            { file: '2024-11-01-ThirdBlog.md', title: 'Third Blog Post' }
+        ];
+
+        async function loadBlogPreviews() {
+            const previewsContainer = document.getElementById("blog-previews");
+            previewsContainer.innerHTML = "";
+            
+            for (const blog of blogFiles) {
+                try {
+                    const response = await fetch(blog.file);
+                    if (!response.ok) throw new Error("File not found");
+                    const text = await response.text();
+                    const previewText = extractPreview(text, 30); // Extract first 30 words
+                    
+                    const previewDiv = document.createElement("div");
+                    previewDiv.className = "blog-preview";
+                    previewDiv.onclick = () => openBlog(blog.file);
+                    previewDiv.innerHTML = `
+                        <h2>${blog.title}</h2>
+                        <p>${previewText}...</p>
+                    `;
+                    previewsContainer.appendChild(previewDiv);
+                } catch (error) {
+                    console.error("Error loading preview:", error);
+                }
+            }
+        }
+
+        function extractPreview(text, wordCount) {
+            return text.split(" ").slice(0, wordCount).join(" ");
+        }
+
+        async function openBlog(file) {
+            try {
+                const response = await fetch(file);
+                if (!response.ok) throw new Error("File not found");
+                const text = await response.text();
+                document.getElementById("blog-content").innerHTML = marked.parse(text);
+                document.getElementById("blog-modal").style.display = "block";
+            } catch (error) {
+                console.error('Error loading blog:', error);
+                document.getElementById("blog-content").innerHTML = "<p>Error loading the blog post. Please try again later.</p>";
+                document.getElementById("blog-modal").style.display = "block";
+            }
         }
 
         function closeBlog() {
             document.getElementById("blog-modal").style.display = "none";
             document.getElementById("blog-content").innerHTML = "";
         }
+
+        // Initialize blog previews
+        loadBlogPreviews();
     </script>
 </body>
 </html>
