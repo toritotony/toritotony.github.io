@@ -310,6 +310,13 @@ a:hover {
     color: #e0e0e0;
 }
 
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
 /* Centered List Section */
 .list-section {
     text-align: center;
