@@ -30,7 +30,33 @@ a:hover {
     font-weight: bold;
     color: #e0e0e0;
 }
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
 
+    .contact-header,
+    .contact-form {
+        max-width: 100%;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-card {
+        width: 80%;
+    }
+}
 /* ===============================================
    Header (Shared Across All Pages)
    =============================================== */
@@ -247,8 +273,8 @@ a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    margin: 20px auto;
-    max-width: 80%;
+    margin: 20px;
+    max-width: 30%;
     text-align: center;
     color: #e0e0e0;
     transition: transform 0.3s ease;
@@ -278,11 +304,11 @@ a:hover {
 .list-section ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 .list-section ul li {
     margin-bottom: 15px;
     font-size: 1.2rem;
-    display: block;
 }
 .list-section ul li::before {
     content: none;
