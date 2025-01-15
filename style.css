@@ -48,7 +48,6 @@ a:hover {
         max-width: 100%;
     }
 }
-/* Responsive Design */
 @media (max-width: 768px) {
     .navbar ul {
         flex-direction: column;
@@ -182,7 +181,6 @@ a:hover {
 /* ===============================================
    About Page
    =============================================== */
-/* About Section */
 .about-section {
     padding: 3rem 1rem;
     background: linear-gradient(135deg, #1a237e, #2c3e50);
@@ -231,10 +229,12 @@ a:hover {
     color: #e0e0e0;
 }
 .section-content {
-    display: block;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
+    margin-left: auto; /* Centers the skills section */
+    margin-right: auto;
     
 }
 .skills {
@@ -242,7 +242,7 @@ a:hover {
     justify-content: space-between; /* Distributes skills evenly */
     align-items: stretch; /* Ensures equal height */
     gap: 1rem; /* Adds spacing between skills */
-    margin-top: 2rem;
+    margin-top: 3rem;
     width: 90%; /* Makes the section span the same width as the panels */
     max-width: 1000px; /* Restricts the maximum width */
     margin-left: auto; /* Centers the skills section */
@@ -288,9 +288,12 @@ a:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     width: 90%; /* Centers the panels */
     max-width: 1000px; /* Ensures consistent width for all panels */
-    text-align: center; /* Centers text inside the panel */
+    text-align: center;
+    margin: 0 auto; /* Centers text inside the panel */
     color: #e0e0e0;
     transition: transform 0.3s ease;
+    margin-left: auto; /* Centers the skills section */
+    margin-right: auto;
 }
 .panel:hover {
     transform: translateY(-5px); /* Adds hover effect */
@@ -309,7 +312,7 @@ a:hover {
     display: flex;
     flex-direction: column; /* Stacks the panels vertically */
     align-items: center; /* Centers the panels horizontally */
-    gap: 2rem; /* Space between panels */
+    gap: 3rem; /* Space between panels */
 }
 .about-section, .personal-section {
     padding: 3rem 1rem;
@@ -336,7 +339,6 @@ a:hover {
 /* ===============================================
    Contact Page
    =============================================== */
-/* Contact Section */
 .contact-section {
     background-color: #1a237e;
     padding: 2rem 1rem;
@@ -386,7 +388,6 @@ a:hover {
 /* ===============================================
    Blog Page
    =============================================== */
-/* Blog Section */
 .blog-section {
     padding: 3rem 1rem;
     color: #e0e0e0;
