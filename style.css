@@ -24,6 +24,13 @@ a:hover {
     color: #e0b3ff;
 }
 
+.logo {
+    text-decoration: none; /* Removes the underline */ 
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
 /* ===============================================
    Header (Shared Across All Pages)
    =============================================== */
@@ -43,11 +50,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #e0e0e0;
 }
 .navbar ul {
     display: flex;
@@ -239,6 +241,30 @@ a:hover {
 }
 .hobbies i {
     color: #b39ddb;
+}
+.panel {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    max-width: 80%;
+    text-align: center;
+    color: #e0e0e0;
+    transition: transform 0.3s ease;
+}
+.panel:hover {
+    transform: translateY(-5px);
+    background-color: #1d3557;
+}
+.panel h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #c5a3ff;
+}
+.panel p {
+    font-size: 1rem;
+    margin-bottom: 10px;
 }
 
 /* ===============================================
