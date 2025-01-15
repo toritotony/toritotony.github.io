@@ -272,6 +272,21 @@ a:hover {
     color: #e0e0e0;
     text-align: center;
 }
+.list-section {
+    text-align: center;
+}
+.list-section ul {
+    list-style: none;
+    padding: 0;
+}
+.list-section ul li {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    display: block;
+}
+.list-section ul li::before {
+    content: none;
+}
 
 /* ===============================================
    Contact Page
