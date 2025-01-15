@@ -153,6 +153,7 @@ a:hover {
     background: linear-gradient(135deg, #1a237e, #2c3e50);
     color: #e0e0e0;
     align-items: center;
+    text-align: center;
 }
 .about-content {
     display: flex;
@@ -272,6 +273,7 @@ a:hover {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    list-style-type: none;
 }
 .social-icons li a {
     color: #9c27b0;
