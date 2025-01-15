@@ -30,6 +30,13 @@ a:hover {
     font-weight: bold;
     color: #e0e0e0;
 }
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
