@@ -154,6 +154,7 @@ a:hover {
     color: #e0e0e0;
     align-items: center;
     text-align: center;
+    list-style-type: none;
 }
 .about-content {
     display: flex;
@@ -187,6 +188,57 @@ a:hover {
     width: 30%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
+}
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 40px 0 20px;
+    color: #e0e0e0;
+}
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+.skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.skill {
+    background-color: #2c3e50;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.skill i {
+    font-size: 2rem;
+    color: #b39ddb;
+    margin-bottom: 0.5rem;
+}
+.hobbies {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+.hobbies li {
+    background-color: #2c3e50;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.hobbies i {
+    color: #b39ddb;
 }
 
 /* ===============================================
