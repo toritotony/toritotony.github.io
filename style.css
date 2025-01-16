@@ -106,6 +106,9 @@ a:hover {
    Index Page
    =============================================== */
 /* Hero Section */
+.header-link {
+    text-decoration: none; /* Removes the underline */ 
+}
 .hero-section {
     background-size: cover;
     background-repeat: no-repeat;
