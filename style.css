@@ -165,6 +165,7 @@ a:hover {
 }
 .service-cards {
     display: flex;
+    columns: 2;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 1rem;
