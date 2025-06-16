@@ -174,7 +174,7 @@ a:hover {
     padding: 1.5rem;
     border-radius: 10px;
     width: 30%;
-    flex: 0 0 30%;
+    flex: 0 0 40%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
 }
