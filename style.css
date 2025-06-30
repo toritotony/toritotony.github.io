@@ -259,6 +259,11 @@ a:hover {
     flex: 1; /* Ensures all skills take up equal space */
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.skill:hover {
+    transform: translateY(-5px); /* Adds hover effect */
+    background-color: #1d3557;
 }
 .skill i {
     font-size: 2rem;
@@ -269,7 +274,7 @@ a:hover {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -330,7 +335,7 @@ a:hover {
 .list-section ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: left;
 }
 .list-section ul li {
     margin-bottom: 15px;
