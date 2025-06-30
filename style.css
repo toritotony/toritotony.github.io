@@ -286,7 +286,8 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    width: 75px;
+    width: 250px;
+    box-sizing: border-box;
 }
 .hobbies i {
     color: #b39ddb;
