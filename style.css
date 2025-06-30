@@ -333,6 +333,7 @@ a:hover {
 }
 .list-section {
     text-align: center;
+    width: 100%;
 }
 .list-section ul {
   list-style: none;
