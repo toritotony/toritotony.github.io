@@ -286,7 +286,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    width: 250px;
+    width: 90%;
     box-sizing: border-box;
 }
 .hobbies i {
