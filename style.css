@@ -354,6 +354,8 @@ a:hover {
   padding: 0.8rem 1.5rem;
   border-radius: 5px;
   font-size: 1.1rem;
+  justify-content: center; 
+  text-align: center; 
   display: flex;
   align-items: center;
   gap: 0.5rem;
