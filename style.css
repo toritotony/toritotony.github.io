@@ -274,7 +274,7 @@ a:hover {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 1.5rem;
     margin-top: 1.5rem;
 }
@@ -286,6 +286,7 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    width: 75px;
 }
 .hobbies i {
     color: #b39ddb;
@@ -335,7 +336,7 @@ a:hover {
 .list-section ul {
     list-style: none;
     padding: 0;
-    text-align: left;
+    text-align: center;
 }
 .list-section ul li {
     margin-bottom: 15px;
