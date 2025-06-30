@@ -335,13 +335,32 @@ a:hover {
     text-align: center;
 }
 .list-section ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  padding: 0;
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .list-section ul li {
-    margin-bottom: 15px;
-    font-size: 1.2rem;
+  background-color: #2c3e50;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 90%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+.list-section ul li i {
+  color: #b39ddb;
 }
 .list-section ul li::before {
     content: none;
