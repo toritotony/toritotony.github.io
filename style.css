@@ -342,6 +342,7 @@ a:hover {
   justify-content: center;
   gap: 1.5rem;
   margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   padding: 0;
   width: 100%;
   max-width: 100%;
@@ -356,8 +357,8 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  width: 90%;
-  max-width: 90%;
+  width: 95%;
+  max-width: 95%;
   box-sizing: border-box;
 }
 .list-section ul li i {
