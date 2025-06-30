@@ -344,7 +344,7 @@ a:hover {
   margin-top: 1.5rem;
   padding: 0;
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -357,7 +357,7 @@ a:hover {
   align-items: center;
   gap: 0.5rem;
   width: 90%;
-  max-width: 300px;
+  max-width: 90%;
   box-sizing: border-box;
 }
 .list-section ul li i {
